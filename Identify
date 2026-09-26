@@ -1,0 +1,88 @@
+
+Step 1 — Identify the publication
+Find and verify:
+* Exact paper title
+* Authors
+* Publication year
+* DOI
+* Publisher
+* Exact journal name
+* Volume, issue, and pages/article number
+* Publication type (journal article, conference paper, review, etc.)
+Step 2 — Verify the journal
+Determine:
+* Whether it is a journal or conference
+* ISSN/eISSN if available
+* Publisher
+* Scopus indexing status
+* Web of Science indexing status, if applicable
+* Journal quartile (Q1/Q2/Q3/Q4)
+* Which subject category the quartile belongs to
+* Whether the Q1/Q2/Q3/Q4 status applies to the relevant publication year
+* CiteScore, Impact Factor/JCR information, if available
+* Whether the journal is currently active
+* Any relevant journal-quality concerns
+Do not guess the quartile. If different databases or subject categories give different rankings, show them separately and explain the difference.
+Step 3 — Verify the paper itself
+Analyze:
+* Research problem
+* Research objective
+* Research question, if stated
+* Dataset(s)
+* Method/model/algorithm
+* Baseline methods
+* Evaluation metrics
+* Main results
+* Main contribution
+* Limitations
+* Research gap addressed
+* Whether the methodology is reproducible
+* Whether the paper is relevant to my MSc thesis topic
+Step 4 — Check research relevance
+My research area is:
+IoT intrusion detection using ML
+
+Step 5 — Source verification
+Use reliable sources and prioritize:
+* Official journal/publisher page
+* Scopus
+* Web of Science
+* Journal Citation Reports (if available)
+* Crossref
+* Official DOI record
+For every important factual claim, provide the source.
+Final output
+Give me a clear table:
+Item	Verified information
+Paper title	
+Authors	
+Year	
+Journal	
+Publisher	
+DOI	
+Scopus	
+Web of Science	
+Quartile	
+Quartile category	
+CiteScore	
+Impact Factor	
+Dataset	
+Method	
+Main contribution	
+Limitation	
+Research gap	
+Relevance to my thesis	
+Recommended use	Core / Supporting / Background
+s
+Then give me:
+1. Journal verification: A short explanation of exactly where the paper was published and how its journal ranking was verified.
+2. Research summary: A concise academic summary of the paper.
+
+4. Citation recommendation: Explain whether I should include this paper in my literature review and why, without giving an arbitrary score or ranking.
+Important:
+* Search the web and verify current/historical information rather than relying on memory.
+* Do not confuse the journal's quartile with the quality of the individual paper.
+* Do not assume “Q1” unless you can verify it.
+* Clearly distinguish current journal ranking from the ranking that existed when the paper was published.
+* If information cannot be verified, explicitly say “Not verified.”
+* Never fabricate DOI, indexing, quartile, impact factor, CiteScore, or publication information.
