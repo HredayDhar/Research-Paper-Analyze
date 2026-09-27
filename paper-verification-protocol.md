@@ -1,10 +1,31 @@
 # Paper Verification Protocol
 
-Use this checklist for **every candidate research paper** before including it in a literature review. Fill every field with a web-verified fact and a source. Never fabricate a DOI, indexing status, quartile, impact factor, CiteScore, dataset, result, or other bibliographic/research information — write **"Not verified"** where a fact cannot be confirmed.
+Use this checklist for **every candidate research paper** before including it in a literature review.
+
+## Important Research-Topic Rule
+
+**Do NOT assume, insert, infer, or hard-code any research topic.**
+
+For each paper-analysis request:
+
+- I may provide a **research topic, research question, thesis topic, or research-topic reference/link**.
+- If I provide one, use **only that information** to evaluate the paper's relevance.
+- If I provide a research-topic link, first inspect and verify the relevant research topic from that link.
+- If I do **not** provide a research topic or research-topic link, do **not** invent one and do not evaluate thesis relevance based on an assumed topic.
+- Keep the paper analysis itself topic-independent until a research topic is explicitly provided.
+- Never use a previously mentioned research topic unless I explicitly provide or reference it in the current request.
+
+Never fabricate a DOI, indexing status, quartile, impact factor, CiteScore, dataset, result, limitation, or other bibliographic/research information.
+
+If a fact cannot be verified, write:
+
+**"Not verified"**
 
 ---
 
-## Step 1 — Identify the Publication
+# Step 1 — Identify the Publication
+
+Verify each item using authoritative sources:
 
 -  Exact paper title
 -  Authors
@@ -12,399 +33,449 @@ Use this checklist for **every candidate research paper** before including it 
 -  DOI
 -  Publisher
 -  Exact journal/conference name
--  Volume, issue, and pages / article number
+-  Volume
+-  Issue
+-  Pages / article number
 -  Publication type (journal article, conference paper, review, etc.)
 
-## Step 2 — Verify the Journal / Venue
+---
+
+# Step 2 — Verify the Journal / Venue
+
+Determine whether the publication venue is a journal, conference, book chapter, workshop, etc.
+
+For a journal, verify:
 
 -  Journal or conference?
--  ISSN / eISSN, if applicable
+-  ISSN / eISSN
 -  Publisher
 -  Scopus indexing status
--  Web of Science indexing status (if applicable)
--  Journal quartile (Q1/Q2/Q3/Q4), if applicable — **do not guess**
--  Subject category the quartile applies to
--  Whether the quartile applies to the paper's publication year specifically
+-  Web of Science indexing status, if applicable
+-  Journal quartile (Q1/Q2/Q3/Q4)
+-  Subject category to which the quartile applies
+-  Whether the quartile applies specifically to the paper's publication year
 -  CiteScore, if available
--  Impact Factor (JCR), if available
--  Whether the journal/venue is currently active
--  Any journal-quality concerns (predatory publisher lists, delisting, retraction concerns, etc.)
+-  Journal Impact Factor (JCR), if available
+-  Whether the journal is currently active
+-  Any relevant journal-quality concerns
+-  Any documented indexing/delisting history, if applicable
 
-> If different databases or subject categories disagree on ranking, list them **separately** and explain the discrepancy — don't collapse them into one answer.
+### Ranking Rules
 
-## Step 3 — Verify the Paper Itself
-
--  Research problem
--  Research objective
--  Research question(s), if stated
--  Dataset(s) / data source(s) used
--  Method / model / algorithm
--  Baseline methods compared against
--  Evaluation metrics
--  Main results
--  Main contribution
--  Limitations
--  Research gap addressed
--  Is the methodology reproducible?
--  Any code, dataset, supplementary material, or implementation publicly available?
-
-## Step 4 — Research Relevance
-
-Explicitly connect the paper's:
-
-- Research problem
-- Research objective
-- Dataset/data source
-- Methodology
-- Results
-- Contribution
-
-back to **the user's research topic / thesis topic**.
-
-Clearly state:
-
-- What aspects overlap with the research topic
-- What aspects are different
-- What methodological or dataset gaps remain
-- Whether the paper is directly relevant, partially relevant, or only useful as background
-
-Do **not** assume relevance merely because the paper belongs to a broadly related field.
-
-## Step 5 — Source Verification
-
-Prioritize sources in this order:
-
-1. Official journal / publisher page
-2. Scopus
-3. Web of Science
-4. Journal Citation Reports (JCR), if available
-5. Crossref
-6. Official DOI record
-7. Official conference/publisher proceedings page
-8. The paper's full text/PDF
-9. Other reputable academic databases or institutional sources
-
-Every non-trivial factual claim must carry a source.
-
----
-
-# Final Output Table
-
-| Item                        | Verified information           |
-| --------------------------- | ------------------------------ |
-| Paper title                 |                                |
-| Authors                     |                                |
-| Year                        |                                |
-| Journal / Conference        |                                |
-| Publisher                   |                                |
-| DOI                         |                                |
-| Publication type            |                                |
-| Scopus                      |                                |
-| Web of Science              |                                |
-| Quartile                    |                                |
-| Quartile category           |                                |
-| Quartile year               |                                |
-| CiteScore                   |                                |
-| Impact Factor               |                                |
-| Dataset / Data source       |                                |
-| Method                      |                                |
-| Baselines                   |                                |
-| Evaluation metrics          |                                |
-| Main results                |                                |
-| Main contribution           |                                |
-| Limitation                  |                                |
-| Research gap                |                                |
-| Reproducibility             |                                |
-| Relevance to research topic |                                |
-| Recommended use             | Core / Supporting / Background |
-
----
-
-## 1. Publication & Journal Verification
-
-Explain exactly where the paper was published.
-
-Verify:
-
-- Journal/conference name
-- Publisher
-- DOI
-- Volume/issue/pages or article number
-- ISSN/eISSN
-- Indexing status
-- Quartile
-- Quartile category
-- Quartile year
-- CiteScore
-- Impact Factor
+Never guess a quartile.
 
 Clearly distinguish:
 
-**Current journal metrics**
-from
-**Metrics/ranking applicable to the paper's publication year.**
+1. **Current ranking**
+2. **Ranking during the paper's publication year**
 
-If a metric cannot be historically verified, write **"Not verified"** rather than using the current value as a substitute.
+If different databases, years, or subject categories give different rankings:
+
+- report them separately;
+- identify the database/category/year;
+- explain the discrepancy;
+- do not combine them into one ranking.
+
+Do not treat the journal's ranking as a quality score for the individual paper.
 
 ---
 
-## 2. Research Summary
+# Step 3 — Verify the Paper Itself
 
-Provide a concise academic summary covering:
+Extract and verify the following from the paper and authoritative sources:
 
 ### Research Problem
 
-What problem does the paper attempt to solve?
+What problem does the paper address?
 
-### Objective
+### Research Objective
 
-What does the study aim to achieve?
+What does the paper attempt to accomplish?
 
 ### Research Question
 
-State the research question(s), if explicitly provided by the authors.
+If explicitly stated, reproduce/paraphrase the research question accurately.
+
+If no explicit research question is provided:
+
+**"Not explicitly stated."**
 
 ### Dataset / Data
 
-What data was used?
-
-Include:
-
 - Dataset name
-- Data source
-- Number of samples/records, if verified
-- Features, if relevant
-- Classes/labels, if relevant
-- Train/test split, if relevant
+- Dataset source
+- Dataset size, if reported
+- Data collection method, if applicable
+- Train/test/validation split, if reported
 
-### Methodology
+Do not invent missing dataset information.
 
-Explain the methodology, model, algorithm, framework, or experimental approach.
-
-### Baselines
-
-Identify the methods/models used for comparison.
-
-### Evaluation
-
-List the evaluation metrics and experimental setup.
-
-### Results
-
-Report the main results exactly as supported by the paper.
-
-### Contribution
-
-Explain what the authors claim as the main contribution.
-
-### Limitations
-
-Report limitations stated by the authors.
-
-Also identify important limitations that are directly evident from the methodology, but clearly label them as **researcher interpretation** rather than attributing them to the authors.
-
----
-
-## 3. Research Gap Analysis
+### Method / Model / Algorithm
 
 Identify:
 
-### Gap addressed by the paper
+- Proposed method
+- Models/algorithms
+- Architecture
+- Feature extraction/selection methods
+- Preprocessing
+- Experimental setup
 
-What previously existing limitation/problem does the paper attempt to address?
+### Baselines
 
-### Remaining gap
+Identify the baseline methods or competing approaches used for comparison.
 
-What important problems remain unresolved after this study?
+If none are reported:
 
-### Dataset gap
+**"Not reported."**
 
-Are there limitations related to dataset size, quality, diversity, realism, recency, class imbalance, or availability?
+### Evaluation Metrics
 
-### Methodological gap
+List the metrics actually used by the authors.
 
-Are there limitations in the proposed methodology, model, experimental design, or comparison?
+Examples may include:
 
-### Generalization gap
+- Accuracy
+- Precision
+- Recall
+- F1-score
+- AUC
+- ROC
+- MAE
+- RMSE
+- MSE
+- BLEU
+- PSNR
 
-Does the method generalize across datasets, environments, devices, domains, or real-world conditions?
+Only include metrics actually reported in the paper.
 
-### Reproducibility gap
+### Main Results
 
-Can another researcher realistically reproduce the experiments from the information provided?
+Report the principal findings using the authors' reported evidence.
 
-Do not invent gaps. Distinguish clearly between:
+Do not exaggerate or reinterpret results.
 
-- **Author-stated limitations**
-- **Evidence from the paper**
-- **Researcher interpretation**
+### Main Contribution
 
----
+State what the paper contributes to the research field.
 
-## 4. Relevance to the Research Topic
+Clearly distinguish:
 
-Explain specifically how the paper relates to the user's research topic.
+- authors' claimed contribution;
+- evidence supporting the contribution;
+- your interpretation.
 
-Use this structure:
+### Limitations
 
-**Direct overlap:**
-What part of the user's research topic does the paper directly address?
+Identify limitations explicitly stated by the authors.
 
-**Partial overlap:**
-Which aspects are related but not directly addressed?
+Then separately identify additional limitations that are directly evident from the methodology, if justified.
 
-**Missing aspects:**
-What important parts of the research topic are absent?
+Do **not** present your interpretation as an author-stated limitation.
 
-**Potential usefulness:**
-How could the paper support the literature review or future research?
+### Research Gap Addressed
 
----
+Explain what gap the paper attempts to address.
 
-## 5. Reproducibility Assessment
+Clearly distinguish between:
 
-Assess whether the study can realistically be reproduced based only on publicly available information.
+- gap explicitly identified by the authors;
+- gap inferred from the study design.
 
-Check:
+### Reproducibility
 
-- Dataset availability
-- Source-code availability
-- Feature/preprocessing description
-- Model/hyperparameter details
-- Experimental configuration
-- Train/test methodology
-- Evaluation methodology
-- Hardware/software environment
-- Random seeds or reproducibility information, if relevant
+Assess whether the methodology appears reproducible based on the information provided.
+
+Check for:
+
+- dataset availability;
+- source code availability;
+- parameter/configuration details;
+- preprocessing details;
+- model architecture;
+- experimental settings;
+- sufficient methodological description.
 
 Use:
 
-**Reproducibility: High / Moderate / Low / Not verified**
+- **Reproducible**
+- **Partially reproducible**
+- **Not sufficiently reproducible**
+- **Not verified**
 
 Explain the basis for the assessment.
 
 ---
 
-## 6. Evidence Classification
+# Step 4 — Research-Topic Relevance
 
-For important findings, clearly distinguish:
+This section must be **conditional on the research topic provided by me**.
 
-### A. Author Statements
+## If I provide a research topic or research-topic link:
 
-What the authors explicitly claim.
+Explicitly compare the paper with that topic.
 
-### B. Evidence
+Discuss:
 
-What is directly supported by the paper, dataset, experiment, or verified external source.
+- Problem overlap
+- Research-object overlap
+- Dataset overlap
+- Methodological overlap
+- Theoretical overlap
+- Application/domain overlap
+- Evaluation overlap
+- Relevant contribution
+- Relevant limitations
+- What the paper does NOT cover
+- Potential role in the literature review
 
-### C. Researcher Interpretation
+Clearly distinguish direct relevance from partial or peripheral relevance.
 
-Your analytical interpretation of the paper's strengths, weaknesses, gaps, or implications.
+## If I do NOT provide a research topic:
 
-Never present researcher interpretation as if it were an author's statement.
+Write:
 
----
+**"Research-topic relevance: Not assessed because no research topic or research-topic reference was provided."**
 
-## 7. Citation Recommendation
-
-Determine whether the paper is appropriate for the literature review based on its verified relevance and research quality.
-
-Use only:
-
-- **Core** — directly relevant and useful for the central research discussion
-- **Supporting** — relevant to a specific method, dataset, theory, comparison, or secondary aspect
-- **Background** — useful for context or foundational understanding
-- **Not recommended** — insufficient relevance, unverifiable publication information, or other substantial concerns
-
-Explain the recommendation using **specific factual reasons**.
-
-Do not assign arbitrary numeric scores.
+Do not infer my research topic from the paper.
 
 ---
 
-## 8. Red Flags / Verification Warnings
+# Step 5 — Source Verification
 
-Report any issues such as:
+Use the following source priority:
 
-- DOI mismatch
-- Title mismatch
-- Author mismatch
-- Publication-year discrepancy
-- Journal/venue discrepancy
-- Unverified indexing
-- Unverified quartile
-- Quartile category mismatch
-- Current ranking incorrectly being presented as historical ranking
-- Retracted paper
-- Expression of concern
-- Duplicate publication
-- Suspicious publisher information
-- Missing methodology
-- Unavailable dataset
-- Unsupported performance claims
-- Insufficient experimental details
-- Other important verification concerns
+1. Official journal / publisher page
+2. Scopus
+3. Web of Science
+4. Journal Citation Reports (JCR)
+5. Crossref
+6. Official DOI record
+7. Official conference/publisher page
+8. Paper PDF
+9. Other reliable academic databases
 
-If no significant issue is found, state:
+Use lower-priority sources only when higher-priority sources do not provide the required information.
 
-**No major verification concerns identified from the sources checked.**
+Every non-trivial factual claim must have an appropriate source.
+
+Do not cite a secondary source when the information can be verified directly from the publisher, DOI record, Scopus, Web of Science, or JCR.
 
 ---
 
-# Final Academic Assessment
+# Step 6 — Verification Rules
 
-End with a concise assessment containing:
+For every paper:
 
-**Publication status:**
-Verified / Partially verified / Not verified
+### Never fabricate
 
-**Research relevance:**
-Direct / Partial / Background / Not relevant
+Never invent:
 
-**Methodological usefulness:**
-Explain briefly.
+- DOI
+- authors
+- publication year
+- journal
+- publisher
+- volume/issue/pages
+- ISSN
+- indexing status
+- quartile
+- CiteScore
+- Impact Factor
+- dataset
+- sample size
+- experimental results
+- methodology
+- limitations
+- research questions
+- contributions
 
-**Main contribution:**
-Explain briefly.
+If verification fails:
 
-**Main limitation:**
-Explain briefly.
+**"Not verified."**
 
-**Research gap:**
-Explain briefly.
+### Separate evidence from interpretation
 
-**Literature-review use:**
-Core / Supporting / Background / Not recommended
+Use three levels where appropriate:
 
-**Reason:**
-Provide a concise evidence-based explanation.
+**A. Author statement**
+What the paper explicitly claims.
+
+**B. Evidence**
+What is actually demonstrated or reported.
+
+**C. Researcher interpretation**
+Your analytical interpretation based on the paper.
+
+Never present C as A.
+
+### Publication-year verification
+
+When discussing journal metrics:
+
+- identify the metric year;
+- identify the database;
+- distinguish historical from current information;
+- do not use a current quartile as though it automatically applied when the paper was published.
 
 ---
 
-# Strict Rules
+# Final Output
 
-1. **Search the web before making substantive factual claims.**
-2. Never rely on memory alone for publication, indexing, ranking, or bibliographic information.
-3. Never fabricate a DOI.
-4. Never fabricate Scopus or Web of Science indexing.
-5. Never assume a journal is Q1/Q2/Q3/Q4.
-6. Never fabricate CiteScore or Impact Factor.
-7. Never confuse a journal's quartile with the quality of an individual paper.
-8. Always identify the **subject category** for a quartile.
-9. Always distinguish **current ranking** from the ranking applicable to the **paper's publication year**.
-10. If historical ranking cannot be verified, write **"Not verified."**
-11. If a fact cannot be verified, write **"Not verified"**.
-12. Never fabricate datasets, sample sizes, methods, results, limitations, or contributions.
-13. Do not infer information that the paper does not provide.
-14. Clearly distinguish author claims from your own research interpretation.
-15. Every non-trivial factual claim must have a source.
-16. Prefer primary sources over secondary sources.
-17. If sources disagree, report the disagreement rather than choosing one without explanation.
-18. Do not use the journal's reputation as evidence that the individual paper is high quality.
-19. Do not recommend a paper solely because it is published in a high-quartile journal.
-20. Verify the actual paper, not merely its abstract or search-engine result.
-21. If the full paper is available, prioritize the paper itself for methodology, datasets, experiments, results, and limitations.
-22. Never present an unverified claim as a fact.
-23. If information is unavailable, explicitly write **"Not verified."**
-24. Keep the analysis academically neutral and evidence-based.
-25. Do not omit important negative findings simply because they reduce the apparent value of the paper.
+## Publication Verification Table
+
+| Item                     | Verified information                                         |
+| ------------------------ | ------------------------------------------------------------ |
+| Paper title              |                                                              |
+| Authors                  |                                                              |
+| Year                     |                                                              |
+| Publication type         |                                                              |
+| Journal / Conference     |                                                              |
+| Publisher                |                                                              |
+| DOI                      |                                                              |
+| ISSN / eISSN             |                                                              |
+| Scopus                   |                                                              |
+| Web of Science           |                                                              |
+| Quartile                 |                                                              |
+| Quartile year            |                                                              |
+| Quartile category        |                                                              |
+| CiteScore                |                                                              |
+| Impact Factor            |                                                              |
+| Dataset                  |                                                              |
+| Method                   |                                                              |
+| Baselines                |                                                              |
+| Evaluation metrics       |                                                              |
+| Main results             |                                                              |
+| Main contribution        |                                                              |
+| Limitation               |                                                              |
+| Research gap             |                                                              |
+| Reproducibility          |                                                              |
+| Research-topic relevance |                                                              |
+| Recommended use          | Core / Supporting / Background / Not suitable / Not assessed |
+
+**Important:** "Recommended use" must be based on the documented relationship between the paper and the research topic I provide. If no research topic is provided, use **"Not assessed."**
+
+---
+
+# 1. Publication & Journal Verification
+
+Explain exactly:
+
+- where the paper was published;
+- publisher;
+- DOI;
+- journal/conference details;
+- indexing status;
+- quartile;
+- quartile category;
+- quartile year;
+- CiteScore;
+- Impact Factor;
+- current journal status.
+
+Provide sources for each factual claim.
+
+Clearly distinguish current metrics from historical metrics.
+
+---
+
+# 2. Research Summary
+
+Provide a concise academic summary covering:
+
+- research problem;
+- objective;
+- research question, if stated;
+- dataset/data;
+- methodology;
+- baselines;
+- evaluation metrics;
+- main results;
+- contribution;
+- limitations.
+
+Do not introduce facts that cannot be verified.
+
+---
+
+# 3. Research-Topic Relevance
+
+Only if I provide a research topic or research-topic link.
+
+Explain:
+
+- how the paper relates to my research topic;
+- which parts directly overlap;
+- which parts only partially overlap;
+- what important areas the paper does not address;
+- how the paper could potentially be used in my literature review.
+
+If no research topic is provided:
+
+**"Not assessed — research topic not provided."**
+
+---
+
+# 4. Citation Recommendation
+
+State whether the paper is appropriate for the literature review based on the **documented evidence and the research topic provided**.
+
+Use categories such as:
+
+- **Core** — directly aligned with the research topic and method/problem.
+- **Supporting** — relevant but not central.
+- **Background** — useful for context or foundational understanding.
+- **Not suitable** — insufficient relevance to the provided research topic.
+- **Not assessed** — no research topic was provided.
+
+Explain the reason.
+
+Do not assign an arbitrary numerical score.
+
+---
+
+# 5. Verification / Red-Flag Notes
+
+List any issues such as:
+
+- conflicting metadata;
+- unverifiable DOI;
+- unclear publication status;
+- inconsistent publication dates;
+- unclear indexing;
+- historical indexing uncertainty;
+- unavailable dataset;
+- unavailable source code;
+- insufficient methodological details;
+- unusually limited experimental description;
+- discrepancies between publisher and database records.
+
+Do not label something as a problem unless there is evidence supporting the observation.
+
+---
+
+# Required Citation Standard
+
+Every important factual claim must have a source immediately associated with it.
+
+Use authoritative sources whenever possible.
+
+For example:
+
+> The paper was published in [journal] in [year]. [Source]
+
+> The journal was indexed in Scopus during [year], according to [source].
+
+> The paper used [dataset], according to the paper's methodology section. [Source]
+
+Do not create citations for information that was not verified.
+
+---
+
+# Final Rule
+
+This protocol is **research-topic agnostic**.
+
+**The paper is analyzed first. The research-topic relevance is evaluated only from the research topic, research question, thesis topic, or research-topic link that I explicitly provide.**
+
+Never assume that my research topic is IoT intrusion detection, machine learning, cybersecurity, or any other field unless I explicitly provide it.
